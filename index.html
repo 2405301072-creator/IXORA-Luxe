@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="IXORA — The Art of Ethical Grace. A luxury sustainable fashion brand creating elegant, modern women's clothing with eco-friendly fabrics and ethical production.">
+  <meta name="keywords"
+    content="IXORA, luxury fashion, sustainable clothing, eco-friendly, women's fashion, ethical fashion, organic fabrics, couture, evening gowns">
+  <meta name="author" content="IXORA">
+  <title>IXORA — The Art of Ethical Grace</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">IXORA</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" style="display: flex; align-items: center;">
+        <img src="images/ixora_logo_extracted.png" alt="IXORA"
+          style="height: 38px; width: auto; mix-blend-mode: multiply;">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#signature">Signature</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#blog">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#" aria-label="Search"><i data-lucide="search" style="width:18px;height:18px"></i></a>
+        <a href="#" aria-label="Account"><i data-lucide="user" style="width:18px;height:18px"></i></a>
+        <a href="#" aria-label="Cart"><i data-lucide="shopping-bag" style="width:18px;height:18px"></i></a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="IXORA - Sustainable luxury fashion editorial">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Spring / Summer 2026</p>
+      <h1 class="hero-title">IXORA</h1>
+      <p class="hero-tagline">The Art of Ethical Grace</p>
+      <div class="hero-cta">
+        <a href="#collections" class="btn-primary">
+          <span>Shop Now</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span class="marquee-item">The Art of Ethical Grace <span class="dot"></span></span>
+      <span class="marquee-item">Sustainable Luxury <span class="dot"></span></span>
+      <span class="marquee-item">Eco-Friendly Fabrics <span class="dot"></span></span>
+      <span class="marquee-item">Ethical Production <span class="dot"></span></span>
+      <span class="marquee-item">Organic Silk & Cotton <span class="dot"></span></span>
+      <span class="marquee-item">Carbon Neutral <span class="dot"></span></span>
+      <span class="marquee-item">The Art of Ethical Grace <span class="dot"></span></span>
+      <span class="marquee-item">Sustainable Luxury <span class="dot"></span></span>
+      <span class="marquee-item">Eco-Friendly Fabrics <span class="dot"></span></span>
+      <span class="marquee-item">Ethical Production <span class="dot"></span></span>
+      <span class="marquee-item">Organic Silk & Cotton <span class="dot"></span></span>
+      <span class="marquee-item">Carbon Neutral <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ==================== NEW COLLECTION SECTION ==================== -->
+  <section class="new-collection" id="new-collection">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What's New</span>
+        <h2 class="section-title">The Spring Collection</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Crafted from the finest organic fabrics, designed to move
+          with you through every moment.</p>
+      </div>
+
+      <div class="collection-grid">
+        <!-- Card 1 -->
+        <div class="collection-card reveal reveal-delay-1" data-product="serene-wrap-dress">
+          <div class="collection-card-image">
+            <img src="images/product1.png" alt="Serene Wrap Dress">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="collection-card-overlay">
+              <button class="quick-view-btn" onclick="openProductModal(0)">Quick View</button>
+            </div>
+          </div>
+          <div class="collection-card-info">
+            <span class="collection-card-category">Dresses</span>
+            <h3>Serene Wrap Dress</h3>
+            <p class="collection-card-price">₹8,990</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="collection-card reveal reveal-delay-2" data-product="emerald-flow-gown">
+          <div class="collection-card-image">
+            <img src="images/product2.png" alt="Emerald Flow Gown">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="collection-card-overlay">
+              <button class="quick-view-btn" onclick="openProductModal(1)">Quick View</button>
+            </div>
+          </div>
+          <div class="collection-card-info">
+            <span class="collection-card-category">Dresses</span>
+            <h3>Emerald Flow Gown</h3>
+            <p class="collection-card-price">₹12,490</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="collection-card reveal reveal-delay-3" data-product="ivory-silk-blouse">
+          <div class="collection-card-image">
+            <img src="images/pdf_img_p4_1.png" alt="Ivory Silk Blouse"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="collection-card-overlay">
+              <button class="quick-view-btn" onclick="openProductModal(2)">Quick View</button>
+            </div>
+          </div>
+          <div class="collection-card-info">
+            <span class="collection-card-category">Tops</span>
+            <h3>Ivory Silk Blouse</h3>
+            <p class="collection-card-price">₹5,490</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="collection-card reveal reveal-delay-4" data-product="champagne-kurta-set">
+          <div class="collection-card-image">
+            <img src="images/pdf_img_p5_1.png" alt="Champagne Kurta Set"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="collection-card-overlay">
+              <button class="quick-view-btn" onclick="openProductModal(3)">Quick View</button>
+            </div>
+          </div>
+          <div class="collection-card-info">
+            <span class="collection-card-category">Ethnic Wear</span>
+            <h3>Champagne Kurta Set</h3>
+            <p class="collection-card-price">₹14,990</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIGNATURE COLLECTION ==================== -->
+  <section class="signature-collection" id="signature">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ixora Atelier</span>
+        <h2 class="section-title">The Signature Collection</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Five exquisite pieces — each a testament to the art of
+          ethical grace, handcrafted from the world's finest sustainable fabrics.</p>
+      </div>
+
+      <!-- Outfit 1: Emerald Silk Eco Evening Gown -->
+      <div class="signature-piece reveal" id="sig-emerald-gown">
+        <div class="signature-piece-visual">
+          <div class="sig-product-display emerald-gown" style="padding: 0;">
+            <img src="images/pdf_img_p6_1.png" alt="Emerald Silk Eco Evening Gown"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="sig-badge">Limited Edition</div>
+        </div>
+        <div class="signature-piece-details">
+          <span class="sig-number">01</span>
+          <h3>Emerald Silk Eco Evening Gown</h3>
+          <p class="sig-description">A breathtaking floor-length gown in deep emerald organic silk with an A-line
+            silhouette, structured waist, and exquisite hand-embroidered gold floral motifs. Designed for moments that
+            demand unforgettable elegance.</p>
+          <div class="sig-specs">
+            <div class="sig-spec"><span class="sig-spec-label">Fabric</span><span>100% Organic Silk</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Silhouette</span><span>A-Line, Floor-Length</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Detail</span><span>Gold Floral Embroidery</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Craft</span><span>Hand-Embroidered, 40+ Hours</span>
+            </div>
+          </div>
+          <div class="sig-price-row">
+            <span class="sig-price">₹18,999 – ₹24,999</span>
+            <button class="btn-primary" onclick="openProductModal(6)"><span>View Details</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outfit 2: Champagne Beige Power Suit -->
+      <div class="signature-piece reverse reveal" id="sig-power-suit">
+        <div class="signature-piece-visual">
+          <div class="sig-product-display power-suit" style="padding: 0;">
+            <img src="images/pdf_img_p3_1.jpeg" alt="Champagne Beige Power Suit"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="sig-badge">Power Dressing</div>
+        </div>
+        <div class="signature-piece-details">
+          <span class="sig-number">02</span>
+          <h3>Champagne Beige Power Suit</h3>
+          <p class="sig-description">Command any room with this impeccably tailored blazer and high-waisted wide-leg
+            trousers in champagne beige sustainable linen blend. Sharp structured shoulders, subtle gold buttons, and
+            clean lines that radiate quiet confidence.</p>
+          <div class="sig-specs">
+            <div class="sig-spec"><span class="sig-spec-label">Fabric</span><span>Sustainable Linen Blend</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Silhouette</span><span>Tailored Blazer + Wide-Leg</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Detail</span><span>Gold Buttons, Sharp Shoulders</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Versatility</span><span>Office, Events, Editorial</span>
+            </div>
+          </div>
+          <div class="sig-price-row">
+            <span class="sig-price">₹12,999 – ₹16,999</span>
+            <button class="btn-primary" onclick="openProductModal(7)"><span>View Details</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outfit 3: Ivory & Gold Ethnic Fusion Set -->
+      <div class="signature-piece reveal" id="sig-ethnic-fusion">
+        <div class="signature-piece-visual">
+          <div class="sig-product-display ethnic-set" style="padding: 0;">
+            <img src="images/pdf_img_p8_1.png" alt="Ivory & Gold Ethnic Fusion Set"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="sig-badge">Festive Luxe</div>
+        </div>
+        <div class="signature-piece-details">
+          <span class="sig-number">03</span>
+          <h3>Ivory & Gold Ethnic Fusion Set</h3>
+          <p class="sig-description">A modern royal aesthetic: structured embroidered blouse paired with a flowing
+            organic silk skirt in ivory and muted gold. Delicate handcrafted details create couture-level artistry for
+            festive occasions and celebrations.</p>
+          <div class="sig-specs">
+            <div class="sig-spec"><span class="sig-spec-label">Fabric</span><span>Premium Organic Silk</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Silhouette</span><span>Structured Blouse + Flowing
+                Skirt</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Detail</span><span>Hand Embroidery, Gold Thread</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Occasion</span><span>Festive, Celebrations,
+                Weddings</span></div>
+          </div>
+          <div class="sig-price-row">
+            <span class="sig-price">₹15,999 – ₹19,999</span>
+            <button class="btn-primary" onclick="openProductModal(8)"><span>View Details</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outfit 4: Sustainable Casual Luxe Co-ord Set -->
+      <div class="signature-piece reverse reveal" id="sig-coord-set">
+        <div class="signature-piece-visual">
+          <div class="sig-product-display coord-set" style="padding: 0;">
+            <img src="images/pdf_img_p7_1.png" alt="Sustainable Casual Luxe Co-ord Set"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="sig-badge">Daily Luxury</div>
+        </div>
+        <div class="signature-piece-details">
+          <span class="sig-number">04</span>
+          <h3>Sustainable Casual Luxe Co-ord Set</h3>
+          <p class="sig-description">Effortless everyday luxury. Relaxed tailored trousers with a silk-blend blouse in
+            soft blush, crafted from organic cotton and bamboo fabric. Clean lines, refined stitching — the art of
+            looking impeccable without trying.</p>
+          <div class="sig-specs">
+            <div class="sig-spec"><span class="sig-spec-label">Fabric</span><span>Organic Cotton & Bamboo Blend</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Silhouette</span><span>Relaxed Tailored</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Detail</span><span>Refined Stitching, Clean Lines</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Versatility</span><span>Day-to-Night, Travel,
+                Weekend</span></div>
+          </div>
+          <div class="sig-price-row">
+            <span class="sig-price">₹8,999 – ₹11,999</span>
+            <button class="btn-primary" onclick="openProductModal(9)"><span>View Details</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outfit 5: Limited Edition Couture Dress -->
+      <div class="signature-piece reveal" id="sig-couture-dress">
+        <div class="signature-piece-visual">
+          <div class="sig-product-display couture-dress" style="padding: 0;">
+            <img src="images/pdf_img_p2_1.jpeg" alt="Limited Edition Couture Dress"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="sig-badge sig-badge-gold">Limited Edition Couture</div>
+        </div>
+        <div class="signature-piece-details">
+          <span class="sig-number">05</span>
+          <h3>Limited Edition Couture Dress</h3>
+          <p class="sig-description">The crown jewel of the collection. A sculptural silhouette with dramatic draping,
+            refined texture detailing, and eco-friendly dye techniques in deep forest green. Only 50 numbered pieces
+            crafted worldwide — each a wearable work of art.</p>
+          <div class="sig-specs">
+            <div class="sig-spec"><span class="sig-spec-label">Fabric</span><span>Sustainable Satin, Eco-Dyed</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Silhouette</span><span>Sculptural, Dramatic
+                Draping</span></div>
+            <div class="sig-spec"><span class="sig-spec-label">Edition</span><span>Limited to 50 Numbered Pieces</span>
+            </div>
+            <div class="sig-spec"><span class="sig-spec-label">Craft</span><span>Couture-Level, 80+ Hours</span></div>
+          </div>
+          <div class="sig-price-row">
+            <span class="sig-price">₹28,999 – ₹39,999</span>
+            <button class="btn-primary" onclick="openProductModal(10)"><span>View Details</span></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="images/pdf_page_8.png" alt="IXORA sustainable fashion studio"
+            style="object-fit: contain; background: var(--ivory-warm); padding: 1rem;">
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Where Luxury Meets Responsibility</h2>
+          <p>IXORA was born from a simple belief: that luxury and sustainability are not opposing forces, but kindred
+            spirits. Named after the delicate ixora flower — a symbol of passion, beauty, and connection to the earth —
+            our brand weaves these values into every thread.</p>
+          <p>Founded by designer Ananya Sharma, IXORA brings together the finest organic cottons, Tencel™ lyocell, and
+            heritage hand-woven linens with contemporary silhouettes that empower the modern woman. Every piece is
+            crafted in our solar-powered atelier by artisans who are fairly paid and passionately committed to their
+            craft.</p>
+          <p><strong>Our Vision:</strong> To redefine luxury fashion as a force for positive change, proving that what
+            we wear can be both breathtakingly beautiful and ethically responsible.</p>
+
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon">🌿</div>
+              <h4>Eco-Friendly</h4>
+              <p>100% organic & recycled fabrics</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">✨</div>
+              <h4>Handcrafted</h4>
+              <p>Artisan-made, small batches</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">♻️</div>
+              <h4>Zero Waste</h4>
+              <p>Circular production methods</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">💛</div>
+              <h4>Fair Trade</h4>
+              <p>Ethical wages & safe conditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COLLECTIONS / SHOP SECTION ==================== -->
+  <section class="shop" id="collections">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Shop The Edit</span>
+        <h2 class="section-title">Our Collections</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Curated pieces designed to transcend seasons and trends.</p>
+      </div>
+
+      <div class="shop-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dresses">Dresses</button>
+        <button class="filter-btn" data-filter="tops">Tops</button>
+        <button class="filter-btn" data-filter="ethnic">Ethnic Wear</button>
+        <button class="filter-btn" data-filter="couture">Couture</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="shop-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal reveal-delay-1" data-category="dresses">
+          <div class="product-card-image">
+            <img src="images/product1.png" alt="Serene Wrap Dress">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(0)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Serene Wrap Dress</h3>
+            <p class="product-fabric">Organic Linen</p>
+            <p class="product-price">₹8,990</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal reveal-delay-2" data-category="dresses">
+          <div class="product-card-image">
+            <img src="images/product2.png" alt="Emerald Flow Gown">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(1)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Emerald Flow Gown</h3>
+            <p class="product-fabric">Tencel™ Lyocell</p>
+            <p class="product-price">₹12,490</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal reveal-delay-3" data-category="tops">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p4_1.png" alt="Ivory Silk Blouse"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(2)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Ivory Silk Blouse</h3>
+            <p class="product-fabric">Peace Silk</p>
+            <p class="product-price">₹5,490</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card reveal reveal-delay-1" data-category="ethnic">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p5_1.png" alt="Champagne Kurta Set"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(3)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Champagne Kurta Set</h3>
+            <p class="product-fabric">Organic Cotton Khadi</p>
+            <p class="product-price">₹14,990</p>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card reveal reveal-delay-2" data-category="tops">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p10_1.png" alt="Meadow Linen Top"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(4)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Meadow Linen Top</h3>
+            <p class="product-fabric">Belgian Linen</p>
+            <p class="product-price">₹4,290</p>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card reveal reveal-delay-3" data-category="accessories">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p11_1.png" alt="Woven Jute Tote"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(5)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Woven Jute Tote</h3>
+            <p class="product-fabric">Natural Jute & Cotton</p>
+            <p class="product-price">₹2,990</p>
+          </div>
+        </div>
+
+        <!-- Product 7: Emerald Evening Gown -->
+        <div class="product-card reveal reveal-delay-1" data-category="couture">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p6_1.png" alt="Emerald Evening Gown"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(6)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Emerald Silk Evening Gown</h3>
+            <p class="product-fabric">Organic Silk</p>
+            <p class="product-price">₹18,999 <span class="original-price">₹24,999</span></p>
+          </div>
+        </div>
+
+        <!-- Product 8: Champagne Power Suit -->
+        <div class="product-card reveal reveal-delay-2" data-category="dresses">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p3_1.jpeg" alt="Champagne Power Suit"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(7)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Champagne Beige Power Suit</h3>
+            <p class="product-fabric">Sustainable Linen Blend</p>
+            <p class="product-price">₹12,999 <span class="original-price">₹16,999</span></p>
+          </div>
+        </div>
+
+        <!-- Product 9: Ivory & Gold Ethnic Set -->
+        <div class="product-card reveal reveal-delay-3" data-category="ethnic">
+          <div class="product-card-image">
+            <img src="images/pdf_page_7.png" alt="Ivory & Gold Ethnic Set"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(8)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Ivory & Gold Ethnic Fusion Set</h3>
+            <p class="product-fabric">Premium Organic Silk</p>
+            <p class="product-price">₹15,999 <span class="original-price">₹19,999</span></p>
+          </div>
+        </div>
+
+        <!-- Product 10: Casual Luxe Co-ord -->
+        <div class="product-card reveal reveal-delay-1" data-category="tops">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p7_1.png" alt="Casual Luxe Co-ord"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(9)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Sustainable Casual Luxe Co-ord</h3>
+            <p class="product-fabric">Organic Cotton & Bamboo</p>
+            <p class="product-price">₹8,999 <span class="original-price">₹11,999</span></p>
+          </div>
+        </div>
+
+        <!-- Product 11: Ltd Ed Couture Dress -->
+        <div class="product-card reveal reveal-delay-2" data-category="couture">
+          <div class="product-card-image">
+            <img src="images/pdf_img_p2_1.jpeg" alt="Couture Dress — Ltd Ed"
+              style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4;">
+            <div class="sustainability-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2" />
+                <path d="m8 12 3 3 5-5" />
+              </svg>
+              Eco-Certified
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn" title="Quick View" onclick="openProductModal(10)">👁</button>
+              <button class="product-action-btn" title="Add to Wishlist">♡</button>
+              <button class="product-action-btn" title="Add to Cart">+</button>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Limited Edition Couture Dress</h3>
+            <p class="product-fabric">Sustainable Satin, Eco-Dyed</p>
+            <p class="product-price">₹28,999 <span class="original-price">₹39,999</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCT DETAIL MODAL ==================== -->
+  <div class="product-modal" id="productModal">
+    <div class="product-modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-image" id="modalImage">
+        <img src="images/product1.png" alt="Product detail" id="modalProductImg">
+      </div>
+      <div class="modal-details">
+        <h2 class="product-name" id="modalName">Serene Wrap Dress</h2>
+        <p class="product-tagline" id="modalTagline">Effortless elegance in organic linen</p>
+        <p class="modal-price" id="modalPrice">₹8,990</p>
+
+        <div class="size-chart">
+          <h4>Select Size</h4>
+          <div class="size-options">
+            <button class="size-btn">XS</button>
+            <button class="size-btn active">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+
+        <div class="fabric-details">
+          <h4>Fabric & Care</h4>
+          <div class="fabric-info" id="modalFabric">
+            <span>🧵 100% Organic Linen</span>
+            <span>🌍 Carbon-neutral production</span>
+            <span>💧 Low water footprint</span>
+            <span>🧼 Machine wash cold, line dry</span>
+          </div>
+        </div>
+
+        <div class="modal-sustainability">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22c4-4 8-7.5 8-12a8 8 0 0 0-16 0c0 4.5 4 8 8 12Z" />
+            <path d="M12 8v4" />
+            <path d="M12 16h.01" />
+          </svg>
+          <span>Sustainability Certified — This garment saves 2,400L of water vs. conventional fashion</span>
+        </div>
+
+        <button class="add-to-cart-btn">Add to Cart</button>
+
+        <div class="modal-reviews">
+          <h4>Customer Reviews</h4>
+          <div class="review-item">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Absolutely stunning. The fabric quality is incredible and I love knowing it's
+              sustainably made."</p>
+            <p class="review-author">— Priya M., Mumbai</p>
+          </div>
+          <div class="review-item">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The fit is perfect. I've received so many compliments. Will definitely be ordering
+              more from IXORA."</p>
+            <p class="review-author">— Aisha K., Delhi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LOOKBOOK SECTION ==================== -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Editorial</span>
+        <h2 class="section-title">The Lookbook</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Stories told through fabric, light, and the quiet power of
+          conscious elegance.</p>
+      </div>
+
+      <div class="lookbook-grid">
+        <div class="lookbook-item reveal">
+          <div class="lookbook-item-image"
+            style="background: url('images/pdf_page_4.png') center/cover no-repeat; min-height: 600px;"></div>
+          <div class="lookbook-item-overlay">
+            <h3>Morning in the Meadow</h3>
+            <p>Spring 2026 Collection</p>
+          </div>
+        </div>
+        <div class="lookbook-item reveal reveal-delay-1">
+          <div class="lookbook-item-image" style="background: url('images/pdf_page_5.png') center/cover no-repeat;">
+          </div>
+          <div class="lookbook-item-overlay">
+            <h3>Golden Hour</h3>
+            <p>Artisan Series</p>
+          </div>
+        </div>
+        <div class="lookbook-item reveal reveal-delay-2">
+          <div class="lookbook-item-image" style="background: url('images/pdf_page_9.png') center/cover no-repeat;">
+          </div>
+          <div class="lookbook-item-overlay">
+            <h3>Earth & Skin</h3>
+            <p>Minimalism Edit</p>
+          </div>
+        </div>
+        <div class="lookbook-item reveal reveal-delay-3">
+          <div class="lookbook-item-image" style="background: url('images/pdf_page_10.png') top/cover no-repeat;"></div>
+          <div class="lookbook-item-overlay">
+            <h3>Whisper White</h3>
+            <p>Bridal Edit</p>
+          </div>
+        </div>
+        <div class="lookbook-item reveal reveal-delay-4">
+          <div class="lookbook-item-image" style="background: url('images/pdf_page_11.png') center/cover no-repeat;">
+          </div>
+          <div class="lookbook-item-overlay">
+            <h3>Forest Reverie</h3>
+            <p>Autumn Preview</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG SECTION ==================== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Journal</span>
+        <h2 class="section-title">Stories & Style</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Insights on conscious fashion, styling guides, and the art
+          of dressing with intention.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-image">
+            <div class="blog-card-image-inner" style="background: linear-gradient(145deg, #2D7A50, #1B5E3B);"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">January 20, 2026</span>
+            <h3>Top 10 Sustainable Fashion Trends of 2026</h3>
+            <p>From bio-fabrics to circular design, discover the innovations reshaping the luxury landscape.</p>
+            <a href="#" class="blog-read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-image">
+            <div class="blog-card-image-inner"
+              style="background: linear-gradient(145deg, var(--champagne), var(--gold));"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">February 5, 2026</span>
+            <h3>How to Style Ethnic Wear for the Modern Woman</h3>
+            <p>Bridging tradition and contemporary elegance — your guide to effortless ethnic styling.</p>
+            <a href="#" class="blog-read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal reveal-delay-3">
+          <div class="blog-card-image">
+            <div class="blog-card-image-inner"
+              style="background: linear-gradient(145deg, var(--earth-medium), var(--charcoal));"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">February 14, 2026</span>
+            <h3>Office Wear Ideas: Power Dressing with Purpose</h3>
+            <p>Command the boardroom in sustainably crafted pieces that mean business.</p>
+            <a href="#" class="blog-read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal reveal-delay-4">
+          <div class="blog-card-image">
+            <div class="blog-card-image-inner"
+              style="background: linear-gradient(145deg, var(--ivory-warm), var(--champagne-light));"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-card-date">February 22, 2026</span>
+            <h3>Why Sustainable Fashion is the Future</h3>
+            <p>The environmental imperative and the rising consumer demand for ethical luxury.</p>
+            <a href="#" class="blog-read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTAGRAM SECTION ==================== -->
+  <section class="instagram" id="instagram">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Follow Us</span>
+        <h2 class="section-title">On Instagram</h2>
+        <span class="instagram-handle">@ixora.official</span>
+      </div>
+
+      <div class="instagram-grid reveal">
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p4_1.png') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p5_1.png') top/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p6_1.png') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p3_1.jpeg') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p8_1.png') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p7_1.png') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p2_1.jpeg') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p10_1.png') top/cover no-repeat;"></div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="instagram-item">
+          <div class="instagram-item-bg" style="background: url('images/pdf_img_p11_1.png') center/cover no-repeat;">
+          </div>
+          <div class="instagram-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2>We'd Love to Hear From You</h2>
+          <p>Whether you have a question about our collections, sustainability practices, or anything else, our team is
+            here to help.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h4>Visit Our Atelier</h4>
+                <p>42 Lotus Lane, Bandra West<br>Mumbai 400050, India</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Call Us</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@ixora.fashion</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.42 7.63 11.15-.1-.94-.2-2.4.04-3.44.22-.92 1.4-5.93 1.4-5.93s-.36-.72-.36-1.76c0-1.65.96-2.88 2.15-2.88 1.01 0 1.5.76 1.5 1.67 0 1.02-.65 2.54-.98 3.95-.28 1.18.59 2.14 1.75 2.14 2.1 0 3.72-2.22 3.72-5.42 0-2.83-2.04-4.82-4.95-4.82-3.37 0-5.35 2.53-5.35 5.14 0 1.02.39 2.11.88 2.7.1.12.11.22.08.34l-.33 1.33c-.05.22-.18.27-.41.16-1.54-.72-2.5-2.96-2.5-4.77 0-3.87 2.82-7.43 8.13-7.43 4.27 0 7.59 3.04 7.59 7.11 0 4.24-2.67 7.66-6.38 7.66-1.25 0-2.42-.65-2.82-1.41l-.77 2.93c-.28 1.07-1.03 2.41-1.54 3.22C9.57 23.81 10.75 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4l11.7 16h4.3L8.3 4z" />
+                <path d="M4 20 20 4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" style="display: block; margin-bottom: 1rem;">
+            <img src="images/ixora_logo_extracted.png" alt="IXORA"
+              style="height: 48px; width: auto; filter: invert(1); mix-blend-mode: screen;">
+          </a>
+          <p>The Art of Ethical Grace. Every piece tells a story of elegance, craftsmanship, and care for the earth.</p>
+          <div class="footer-newsletter-input">
+            <input type="email" placeholder="Join our newsletter">
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#collections">New Arrivals</a></li>
+            <li><a href="#collections">Dresses</a></li>
+            <li><a href="#collections">Tops</a></li>
+            <li><a href="#collections">Ethnic Wear</a></li>
+            <li><a href="#collections">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#about">Sustainability</a></li>
+            <li><a href="#about">Artisans</a></li>
+            <li><a href="#lookbook">Lookbook</a></li>
+            <li><a href="#blog">Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Care Instructions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 IXORA. All rights reserved. Crafted with 🌿 for the planet.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
